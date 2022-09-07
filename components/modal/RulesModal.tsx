@@ -9,7 +9,7 @@ type Props = {
 
 const RulesModal = ( props: Props ) => {
     // TODO: whats the correct type for event?
-    const handleOnClose = (e) => {
+    const handleOnClose = (e:any) => {
         if(e.target.id === "rules-modal") {
             props.onClose()
         }
